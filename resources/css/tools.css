@@ -1,0 +1,133 @@
+#Tools {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, rgb(255, 5, 24) 0%, rgb(255, 5, 24) 20%, rgb(249, 54, 40) 20%, rgb(249, 54, 40) 40%, rgb(243, 103, 57) 40%, rgb(243, 103, 57) 60%, rgb(236, 152, 73) 60%, rgb(236, 152, 73) 80%, rgb(230, 201, 89) 80%, rgb(230, 201, 89) 100%);
+    padding: 20px;
+}
+
+#Tools .ai-heading-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Tools .ai-heading-container .heading-name {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#Tools .ai-tools-card {
+    padding: 10px 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#Tools .ai-tools-card .tool-image {
+    max-height: 500px;
+}
+
+#Tools .ai-tools-card .tool-name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+#Tools .ai-tools-card button {
+    margin-top: 20px;
+    border: none;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    background: black;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#Tools .ai-tools-card .tool-template-badge {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 900;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-style: italic;
+}
+
+#Tools .ai-tools-card .tool-template-badge iconify-icon {
+    font-size: 16px;
+}
+
+#Tools .ai-tools-card .tool-template-badge.free {
+    background-color: #3cc48e;
+}
+
+#Tools .ai-tools-card .tool-template-badge.premium {
+    background-color: #ff6525;
+}
+
+#Tools .ai-tools-card button iconify-icon {
+    font-size: 25px;
+}
+
+/* Shimmer effect on hover */
+#Tools .ai-tools-card button:hover {
+    background: linear-gradient(90deg, black 25%, #ffffff 50%, black 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear forwards;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+#Tools .ai-tools-card .tool-content {
+    text-align: center;
+    font-size: 12px;
+}
+
+#Tools .ai-tools-card .tool-image {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#Tools .ai-tools-card .tool-image img {
+    height: 200px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#Tools .ai-tools-card .tool-image img:hover {
+    transform: scale(1.1);
+}
