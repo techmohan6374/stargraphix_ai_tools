@@ -189,7 +189,7 @@ const Login = {
             $('#googleLoginModal').modal('show');
         },
         hideLogin() {
-            $('#googleLoginModal').modal('show');
+            $('#googleLoginModal').modal('hide');
         }
         // redirectToTool(toolId) {
         //     this.$router.push(`/Tool${toolId}`);
