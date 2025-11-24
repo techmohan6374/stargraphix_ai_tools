@@ -1,0 +1,38 @@
+#Tool-2 #editor_container {
+    width: 100%;
+    height: 100vh;
+}
+
+#Tool-2 .tool-container {
+  padding: 1em;
+}
+
+#Tool-2 .upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff2c2d;
+  color: #fff;
+  padding: 10px;
+  margin:20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #bd1a1a;
+}
+
+.upload-input {
+  display: none;
+}
+
+.editor-box {
+  border: 2px dashed #ccc;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #fafafa;
+}

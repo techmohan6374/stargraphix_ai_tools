@@ -1,0 +1,17 @@
+#Tool-5 {
+    background-color: #0b0f19;
+    padding: 20px 0px;
+}
+
+#Tool-5 center {
+    display: none;
+}
+
+#Tool-5 .dotnet-div {
+    color: white;
+    text-align: center;
+}
+
+#Tool-5 table td div {
+    color: white !important;
+}

@@ -1,0 +1,63 @@
+/* Full Page Wrapper */
+.flipbook-wrapper {
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, rgb(255, 5, 24) 0%, rgb(255, 5, 24) 20%, rgb(249, 54, 40) 20%, rgb(249, 54, 40) 40%, rgb(243, 103, 57) 40%, rgb(243, 103, 57) 60%, rgb(236, 152, 73) 60%, rgb(236, 152, 73) 80%, rgb(230, 201, 89) 80%, rgb(230, 201, 89) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Upload Container Box */
+#upload-container-file {
+    width: 420px;
+    height: 260px;
+    background: #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.25s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Drag Active State */
+#upload-container-file.drag-over {
+    background: #ff5252;
+    border-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
+}
+
+/* Inner Content */
+.upload-inner {
+    text-align: center;
+    color: #fff;
+}
+
+/* Icon */
+.upload-icon {
+    width: 70px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.upload-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Subtitle */
+.upload-sub {
+    font-size: 16px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+/* Hidden file input */
+.hidden-file {
+    display: none;
+}

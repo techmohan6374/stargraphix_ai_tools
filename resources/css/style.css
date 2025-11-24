@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Common CSS Styles */
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --background-color: #F5F5F5;
+    --primary-color: #FF2C2D;
+    --primary-dark-color: #CC2425;
+    --secondary-color: white;
+    --dark-color: black;
+    --dark-secondary-color: #333233;
+    --dark-light-color: #4D4B4B;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Vue Display None */
+
+[v-cloak] {
+    display: none;
+}
+
+.container-fluids {
+    background-color: var(--background-color);
+}

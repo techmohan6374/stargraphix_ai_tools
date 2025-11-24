@@ -1,0 +1,24 @@
+#Tool-7 {
+    background-color: #0b0f19;
+    padding: 20px 0px;
+}
+
+#Tool-7 #description {
+    display: none !important;
+}
+
+#Tool-7 div[align="center"] {
+    display: none !important;
+}
+#Tool-7 .gradio-container{
+    margin:0 auto;
+}
+
+#Tool-7 p[style="display: flex;gap: 6px;"] {
+    display: none !important;
+}
+
+#Tool-7 .dotnet-div {
+    color: white;
+    text-align: center;
+}

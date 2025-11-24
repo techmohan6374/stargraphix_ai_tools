@@ -1,0 +1,32 @@
+#Tool-8 {
+    background-color: #0f0f11;
+    padding: 20px 0px;
+}
+
+#Tool-8 #description {
+    display: none !important;
+}
+
+#Tool-8 div[align="center"] {
+    display: none !important;
+}
+
+#Tool-8 .gradio-container {
+    margin: 0 auto;
+}
+
+#Tool-8 p[style="display: flex;gap: 6px;"] {
+    display: none !important;
+}
+
+#Tool-8 div[style="display: flex; justify-content: center; align-items: center; text-align: center;"] {
+    display: none !important;
+}
+#Tool-8 .tabs{
+    background-color: transparent;
+}
+
+#Tool-8 .dotnet-div {
+    color: white;
+    text-align: center;
+}
