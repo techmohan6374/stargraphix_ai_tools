@@ -1,4 +1,4 @@
-const Tool5 = {
+const ToolFive = {
     template: `
         <div id="Tool-5">
             <gradio-app src="https://gokaygokay-tileupscalerv2.hf.space"></gradio-app>

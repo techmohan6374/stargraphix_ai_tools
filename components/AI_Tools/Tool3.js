@@ -1,4 +1,4 @@
-const Tool3 = {
+const ToolThree = {
     template: `
         <div id="Tool-3" class="qr-generator">
             <div class="tool-header">

@@ -1,4 +1,4 @@
-const Tool10 = {
+const ToolTen = {
     template: `
         <div id="Tool-10">
 

@@ -1,4 +1,4 @@
-const Tool7 = {
+const ToolSeven = {
     template: `
         <div id="Tool-7">
             <gradio-app src="https://fffiloni-diffusers-image-outpaint.hf.space"></gradio-app>

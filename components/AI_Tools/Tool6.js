@@ -1,4 +1,4 @@
-const Tool6 = {
+const ToolSix = {
     template: `
         <div id="Tool-6">
             <gradio-app src="https://akhaliq-qwen-image-edit-2509-photo-to-anime.hf.space"></gradio-app>

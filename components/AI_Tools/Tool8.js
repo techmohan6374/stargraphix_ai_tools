@@ -1,4 +1,4 @@
-const Tool8 = {
+const ToolEight = {
     template: `
         <div id="Tool-8">
             <gradio-app src="https://not-lain-background-removal.hf.space"></gradio-app>

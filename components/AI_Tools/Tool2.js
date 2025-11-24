@@ -1,4 +1,4 @@
-const Tool2 = {
+const ToolTwo = {
   template: `
     <div id="Tool-2" class="tool-container">
       <label class="upload-label">

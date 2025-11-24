@@ -1,4 +1,4 @@
-const Tool9 = {
+const ToolNine = {
   template: `
     <div id="singleFlipBookViewer" class="flipbook-wrapper">
 
