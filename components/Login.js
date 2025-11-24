@@ -51,7 +51,9 @@ const Login = {
                                 Sign Up Required
                             </div>
                             <div class="right-side">
-                                <button><iconify-icon icon="ic:twotone-close" width="24" height="24"></iconify-icon></button>
+                                <button class="flex" v-on:click="hideLogin()">
+                                    <iconify-icon icon="ic:twotone-close" width="24" height="24"></iconify-icon>
+                                </button>
                             </div>
                         </div>
                         <div class="modal-body">

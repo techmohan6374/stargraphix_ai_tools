@@ -10,7 +10,7 @@ const routes = [
     { path: "/Tool7", component: Tool7 },
     { path: "/Tool8", component: Tool8 },
     { path: "/Tool9", component: Tool9 },
-    { path: "/Tool9", component: Tool10 },
+    { path: "/Tool10", component: Tool10 },
 ];
 
 const router = new VueRouter({
