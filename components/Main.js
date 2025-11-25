@@ -3,6 +3,7 @@ const Main = {
         <div id="Tools">
             <div class="ai-heading-container">
                 <div class="heading-name">AI Tools</div>
+                <div class="profile-card" v-on:click="showLogin()">{{ profileName }}</div>
             </div>
             <div class="row m-0">
                 <div class="col-12 col-md-6 col-xl-3 mt-4" v-for="val in aiTools">
@@ -176,9 +177,19 @@ const Main = {
     mounted() {
         this.user = JSON.parse(localStorage.getItem("user"));
         $('.modal-backdrop.show').css('display', 'none');
-        this.showLogin();
+        $('body').css('overflow', 'auto');
     },
     computed: {
+        profileName() {
+            if (!this.user || !this.user.name) return "";
+
+            const words = this.user.name.trim().split(/\s+/);
+
+            const first = words[0] ? words[0][0].toUpperCase() : "";
+            const second = words[1] ? words[1][0].toUpperCase() : "";
+
+            return first + second;
+        },
         randomQuote() {
             if (!this.user) return "";
             let q = this.quotes[Math.floor(Math.random() * this.quotes.length)];
