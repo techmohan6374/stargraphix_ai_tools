@@ -173,6 +173,17 @@
     font-size: 30px;
 }
 
+#Tools #googleLoginModal .modal-body .profile-body {
+    flex-direction: column;
+}
+
+#Tools #googleLoginModal .modal-body .profile-body h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+#Tools #googleLoginModal .modal-body .logout-btn {
+    margin: 20px 0px;
+}
 
 @keyframes shimmer {
     0% {

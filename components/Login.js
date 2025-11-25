@@ -171,8 +171,8 @@ const Login = {
             ]
         }
     },
-    mounted() {
-        $('#googleLoginModal').modal('show');
+    mounted(){
+        $('.modal-backdrop.show').css('display','none');
     },
     methods: {
         googleSignup() {
