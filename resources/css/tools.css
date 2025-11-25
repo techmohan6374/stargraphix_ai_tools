@@ -101,6 +101,45 @@
 #Tools #googleLoginModal .modal-header .left-side {
     font-size: 20px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#Tools #googleLoginModal .modal-header .left-side .modal-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+}
+
+#Tools #googleLoginModal .modal-header {
+    z-index: 222;
+}
+
+#Tools #googleLoginModal .modal-header .left-side .modal-icon iconify-icon {
+    font-size: 20px;
+}
+
+#Tools #googleLoginModal .modal-body {
+    flex-direction: column;
+}
+
+#Tools #googleLoginModal .modal-body h3 {
+    text-align: center;
+}
+
+#Tools #googleLoginModal .modal-body p {
+    text-align: center;
+}
+
+#Tools #googleLoginModal .modal-body button {
+    border: none;
+    outline: none;
 }
 
 #Tools #googleLoginModal .modal-header .right-side button {
@@ -110,6 +149,28 @@
     cursor: pointer;
     font-size: 20px;
     background-color: transparent;
+}
+
+#Tools #googleLoginModal .modal-body button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 10px;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+#Tools #googleLoginModal .modal-body button:hover {
+    background-color: #f0f0f0;
+}
+
+#Tools #googleLoginModal .modal-body button iconify-icon {
+    font-size: 30px;
 }
 
 

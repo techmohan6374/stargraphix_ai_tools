@@ -48,7 +48,9 @@ const Login = {
                     <div class="modal-content">
                         <div class="modal-header">
                             <div class="left-side">
-                                Sign Up Required
+                               <div class="flex modal-icon">
+                                    <iconify-icon icon="charm:sign-in"></iconify-icon>
+                               </div> Sign Up Required
                             </div>
                             <div class="right-side">
                                 <button class="flex" v-on:click="hideLogin()">
@@ -56,10 +58,16 @@ const Login = {
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body flex">
+                            <div>
+                                <img style="width: 260px;margin-top: -20px;" src="https://i.pinimg.com/originals/7d/9b/1d/7d9b1d662b28cd365b33a01a3d0288e1.gif" alt="Login Illustration" loading="lazy">
+                            </div>
                             <h3>If you want to access AI tools, please sign up with Google</h3>
                             <p>Signing up allows you to unlock all AI-powered features and personalized tools instantly.</p>
-                            <button v-on:click="googleSignup()">Continue with Google</button>
+                            <button class="flex" v-on:click="googleSignup()">
+                                <iconify-icon icon="material-icon-theme:google"></iconify-icon>
+                                Continue with Google
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -162,6 +170,9 @@ const Login = {
                 }
             ]
         }
+    },
+    mounted() {
+        $('#googleLoginModal').modal('show');
     },
     methods: {
         googleSignup() {
