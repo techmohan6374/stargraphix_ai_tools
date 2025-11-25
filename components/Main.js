@@ -178,6 +178,7 @@ const Main = {
         this.user = JSON.parse(localStorage.getItem("user"));
         $('.modal-backdrop.show').css('display', 'none');
         $('body').css('overflow', 'auto');
+        $('body').css('padding', '0px');
     },
     computed: {
         profileName() {
