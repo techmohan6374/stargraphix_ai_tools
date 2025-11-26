@@ -171,8 +171,10 @@ const Login = {
             ]
         }
     },
-    mounted(){
-        $('.modal-backdrop.show').css('display','none');
+    mounted() {
+        $('.modal-backdrop.show').css('display', 'none');
+        $('body').css('overflow', 'auto');
+        $('body').css('padding', '0px');
     },
     methods: {
         googleSignup() {
