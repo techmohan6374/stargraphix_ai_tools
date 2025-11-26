@@ -1,8 +1,9 @@
+// ROUTES
 const routes = [
     { path: "/", component: Login },
     { path: "/Main", component: Main },
     { path: "/Tool1", component: ToolOne },
-    { path: "/Tool2", component: ToolTwo},
+    { path: "/Tool2", component: ToolTwo },
     { path: "/Tool3", component: ToolThree },
     { path: "/Tool4", component: ToolFour },
     { path: "/Tool5", component: ToolFive },
@@ -18,20 +19,30 @@ const router = new VueRouter({
     routes
 });
 
+// NAVIGATION GUARD
 router.beforeEach((to, from, next) => {
     const user = localStorage.getItem("user");
 
+    // If user is already logged in and tries to open login → redirect
+    if (to.path === "/" && user) {
+        next("/Main");
+        return;
+    }
+
+    // Login page is always allowed
     if (to.path === "/") {
         next();
         return;
     }
 
+    // Other pages require login
     if (!user) {
         next("/");
     } else {
         next();
     }
 });
+
 
 
 // const routes = [
