@@ -308,32 +308,39 @@ const ToolEleven = {
         handleExcelUpload(event) {
             const file = event.target.files[0];
             if (!file) return;
-
             const reader = new FileReader();
             reader.onload = e => {
                 const wb = XLSX.read(e.target.result, { type: 'binary' });
                 const ws = wb.Sheets[wb.SheetNames[0]];
                 const raw = XLSX.utils.sheet_to_json(ws, { header: 1 });
-
                 if (raw.length === 0) return;
-
                 this.excelHeaders = raw[0].map(h => String(h).trim());
                 const dataRows = raw.slice(1).filter(r => r.some(c => c !== undefined && c !== ''));
-
-                if (dataRows.length > 50) {
-                    this.showLimitModal = true;
-                    this.$refs.excelInput.value = '';
-                    return;
-                }
-
+                if (dataRows.length > 50) { this.showLimitModal = true; this.$refs.excelInput.value = ''; return; }
                 this.excelRows = dataRows.map(row => {
                     const obj = {};
-                    this.excelHeaders.forEach((h, i) => {
-                        obj[h] = row[i] !== undefined ? String(row[i]) : '';
-                    });
+                    this.excelHeaders.forEach((h, i) => { obj[h] = row[i] !== undefined ? String(row[i]) : ''; });
                     return obj;
                 });
-
+                this.fields = [];
+                this.excelHeaders.forEach((header, index) => {
+                    this.fields.push({
+                        id: this.uid(),
+                        name: header,
+                        x: 80,
+                        y: 80 + (index * 60),
+                        w: 220,
+                        h: 44,
+                        textAlign: 'center',
+                        vertAlign: 'center',
+                        fontSize: 18,
+                        fontFamily: "'DM Sans', sans-serif",
+                        color: '#222222',
+                        fontWeight: 'normal',
+                        fontStyle: 'normal',
+                        textDecoration: 'none'
+                    });
+                });
                 this.excelFilename = `✓ ${file.name} (${this.excelRows.length} rows)`;
                 this.showStatus(`Excel loaded: ${this.excelRows.length} rows`);
             };
