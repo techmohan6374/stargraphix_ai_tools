@@ -155,6 +155,13 @@ const Main = {
                     toolName: 'AI Resume Maker',
                     toolDescription: 'Build resumes using AI guidance effectively.\nChoose templates and layouts effortlessly.\nExport ATS-ready professional resumes instantly.',
                     toolSubscription: 'Own Tool'
+                },
+                {
+                    id: 14,
+                    toolImage: 'resources/images/AI_Tools/14.png',
+                    toolName: 'Dynamic Certificate Generator',
+                    toolDescription: 'Create dynamic, customizable certificates with ease.\nAdd logos, signatures, and unique designs.\nPerfect for events, training programs, and recognition.',
+                    toolSubscription: 'Own Tool'
                 }
             ],
             quotes: [
@@ -207,6 +214,10 @@ const Main = {
         redirectToTool(toolId) {
             if ([11, 12, 13].includes(toolId)) {
                 alert("This tool is coming soon!");
+                return;
+            }
+            else if ([14].includes(toolId)) {
+                this.$router.push(`/Tool11`);
                 return;
             }
             this.$router.push(`/Tool${toolId}`);

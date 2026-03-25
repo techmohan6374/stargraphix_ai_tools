@@ -167,6 +167,13 @@ const Login = {
                     toolName: 'AI Resume Maker',
                     toolDescription: 'Build resumes using AI guidance effectively.\nChoose templates and layouts effortlessly.\nExport ATS-ready professional resumes instantly.',
                     toolSubscription: 'Own Tool'
+                },
+                {
+                    id: 14,
+                    toolImage: 'resources/images/AI_Tools/14.png',
+                    toolName: 'Dynamic Certificate Generator',
+                    toolDescription: 'Create dynamic, customizable certificates with ease.\nAdd logos, signatures, and unique designs.\nPerfect for events, training programs, and recognition.',
+                    toolSubscription: 'Own Tool'
                 }
             ]
         }
