@@ -22,11 +22,16 @@
 #Tool-8 div[style="display: flex; justify-content: center; align-items: center; text-align: center;"] {
     display: none !important;
 }
-#Tool-8 .tabs{
+
+#Tool-8 .tabs {
     background-color: transparent;
 }
 
 #Tool-8 .dotnet-div {
     color: white;
     text-align: center;
+}
+
+#Tool-8 iframe h1 {
+    display: none !important;
 }
